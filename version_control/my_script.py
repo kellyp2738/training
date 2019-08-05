@@ -1,7 +1,14 @@
 # A toy script
 
-print("What should I print?")
+print("Please enter two numbers to add.\nFirst Number:")
 
-input_request = raw_input()
+n = raw_input()
 
-print(input_request)
+print("Second Number:")
+
+m = raw_input()
+
+# convert user string input to float
+answer = float(n) + float(m)
+
+print("The sum of {} and {} is {}".format(n, m, answer))
